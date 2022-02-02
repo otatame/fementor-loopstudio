@@ -24,18 +24,17 @@ a {
 }
 
 #head-container {
-  background: url("/images/desktop/image-hero.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 1, 0.438))), url("/images/desktop/image-hero.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 1, 0.438) 0%), url("/images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
   min-width: 100vw;
   min-height: 100vh;
 }
 
 #head-container #content-container {
   width: auto;
-  padding: 3rem 10rem;
+  padding: 4rem 12%;
   margin: 0 auto;
 }
 
@@ -53,9 +52,81 @@ a {
 
 #head-container #content-container #nav #menus {
   font-family: "Alata", sans-serif;
+  font-size: clamp(0.5rem, 2vw, 1rem);
 }
 
 #head-container #content-container #nav #menus .menu:not(:last-child) {
-  padding-right: 2rem;
+  margin-right: 2rem;
+}
+
+#head-container #content-container #nav #menus .menu {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#head-container #content-container #nav #menus .menu::after {
+  content: '';
+  background: white;
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 11.5px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  display: block;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+#head-container #content-container #nav #menus .menu:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#head-container #content-container #head-content {
+  border: 2px solid white;
+  width: 60%;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  min-height: 10vh;
+  margin-top: 17%;
+}
+
+#head-container #content-container #head-content h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 4rem;
+  padding: 5% 5%;
+}
+
+#head-container #content-container #hamburger .btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#head-container #content-container #hamburger .btn #hamburger-icon {
+  color: white;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 325px) {
+  #head-container #content-container #menus {
+    display: none;
+  }
+  #head-container #content-container #hamburger {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #head-container #content-container #menus {
+    display: block;
+  }
+  #head-container #content-container #hamburger {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

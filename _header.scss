@@ -1,0 +1,82 @@
+#head-container{
+    background: linear-gradient(90deg, rgba(0, 0, 1, 0.438) 0%), url('/images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    
+    
+    #content-container{
+        width: auto;
+        padding: 4rem 12%;
+        margin: 0 auto;
+
+        #nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+
+            #menus{
+                font-family: $alata;
+                font-size: clamp(.5rem, 2vw, 1rem);
+
+                .menu:not(:last-child){
+                    margin-right: 2rem;
+                }
+
+                .menu{
+                    position: relative;
+                    padding-bottom: 10px;
+
+                    &::after{
+                        content: '';
+                        background: $white;
+                        width: 50%;
+                        height: 3px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 11.5px;
+                        transition: all .3s ease;
+                        display: block;
+                        transform: scaleX(0);
+                    }
+
+                    &:hover::after{
+                        transform: scaleX(1);
+                    }
+                }
+            }
+        }
+
+        #head-content{
+            border: 2px solid $white;
+            width: 60%;
+            min-width: min-content;
+            min-height: 10vh;
+            margin-top: 17%;
+
+            h1{
+                color: $white;
+                text-transform: uppercase;
+                // font-size: clamp(1rem, 5vw, 4rem);
+                font-size: 4rem;
+                padding: 5% 5%;
+            }
+        }
+
+        #hamburger{
+
+            .btn{
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                #hamburger-icon{
+                    color: white;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
