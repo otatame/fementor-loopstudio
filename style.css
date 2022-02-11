@@ -112,6 +112,140 @@ a {
   font-size: 2rem;
 }
 
+#main-container #content-one {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4rem 12%;
+}
+
+#main-container #content-one #content-desc {
+  background-color: white;
+  position: absolute;
+  right: 0;
+  bottom: -2rem;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+  width: 550px;
+  padding: 4.5rem 5rem 3.5rem 5rem;
+}
+
+#main-container #content-one #content-desc h2 {
+  font-size: 2.5rem;
+  padding-bottom: 1.4rem;
+  text-transform: uppercase;
+}
+
+#content-two {
+  margin: 11rem 12%;
+  border: 2px solid red;
+}
+
+#content-two #creations-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content-two #creations-title h1 {
+  font-size: 2.5rem;
+}
+
+#content-two #creations-title .btn {
+  background: white;
+  border: 2px solid black;
+  padding: .6rem 2.7rem;
+  font-size: 1.1rem;
+  letter-spacing: 5px;
+  font-family: 'Alata', sans-serif;
+  cursor: pointer;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+#content-two #creations-title .btn:hover {
+  background: black;
+  color: white;
+}
+
+#content-two #grid-contents {
+  margin-top: 4rem;
+}
+
+#content-two #grid-contents .grid-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  width: 100%;
+}
+
+#content-two #grid-contents .grid-content .content {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  color: white;
+}
+
+#content-two #grid-contents .grid-content .content p {
+  position: absolute;
+  bottom: 0;
+  font-size: 2rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+#content-two #grid-contents .grid-content .one {
+  background-image: url("/images/desktop/image-deep-earth.jpg");
+  background-repeat: no-repeat;
+}
+
+#content-two #grid-contents .grid-content .two {
+  background-image: url("/images/desktop/image-night-arcade.jpg");
+  background-repeat: no-repeat;
+}
+
+#content-two #grid-contents .grid-content .three {
+  background-image: url("/images/desktop/image-soccer-team.jpg");
+  background-repeat: no-repeat;
+}
+
+#content-two #grid-contents .grid-content .four {
+  background-image: url("/images/desktop/image-grid.jpg");
+  background-repeat: no-repeat;
+}
+
+#content-two #grid-contents .grid-content .five {
+  background-image: url("/images/desktop/image-from-above.jpg");
+  background-repeat: no-repeat;
+}
+
+#content-two #grid-contents .grid-content .six {
+  background-image: url("/images/desktop/image-pocket-borealis.jpg");
+  background-repeat: no-repeat;
+}
+
+#content-two #grid-contents .grid-content .seven {
+  background-image: url("/images/desktop/image-curiosity.jpg");
+  background-repeat: no-repeat;
+}
+
+#content-two #grid-contents .grid-content .eight {
+  background-image: url("/images/desktop/image-fisheye.jpg");
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 325px) {
   #head-container #content-container #menus {
     display: none;
@@ -121,7 +255,7 @@ a {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   #head-container #content-container #menus {
     display: block;
   }

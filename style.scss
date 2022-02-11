@@ -41,6 +41,10 @@ a{
 //header
 @import "./header";
 
+@import "./main-one";
+
+@import "./main-two";
+
 //Media-query
 @media screen and (min-width: 325px){
     #head-container{
@@ -58,7 +62,7 @@ a{
     }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1000px){
     #head-container{
 
         #content-container{
